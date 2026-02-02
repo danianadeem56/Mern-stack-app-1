@@ -1,0 +1,105 @@
+.para1 {
+  font-size: large;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.bags h1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.bags p {
+  margin-top: 1%;
+  margin-left: 7%;
+  font-size: large;
+  text-align: left;
+}
+
+.bags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 100%;
+  margin: 50px;
+}
+
+.bag-card {
+  background: whitesmoke;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  /* equal height for all cards */
+}
+
+.bag-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bag-card h3 {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+}
+
+.bag-card p {
+  color: black;
+  text-align: center;
+}
+
+.bag-card button {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+  align-self: center;
+}
+
+.bag-card button:hover {
+  background-color: plum;
+}
+
+.bag-card:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+  .bags-grid {
+    margin: 30px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bags-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 20px;
+    gap: 15px;
+  }
+
+  .bag-card {
+    height: 320px;
+    /* mobile optimized height */
+  }
+
+  .bag-card img {
+    height: 150px;
+  }
+
+  .bag-card button {
+    width: 90%;
+  }
+}

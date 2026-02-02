@@ -1,0 +1,51 @@
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard th,
+.dashboard td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.dashboard th {
+  background-color: plum;
+  color: white;
+}
+
+.dashboard tr{
+  background-color: #fff;
+}
+
+.dashboard tr:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .dashboard table, .dashboard th, .dashboard td {
+    font-size: 14px;
+  }
+}
